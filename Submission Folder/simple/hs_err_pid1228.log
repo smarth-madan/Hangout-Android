@@ -1,0 +1,112 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=1228, tid=1992
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x011aa400):  JavaThread "Unknown thread" [_thread_in_vm, id=1992, stack(0x011d0000,0x01220000)]
+
+Stack: [0x011d0000,0x01220000],  sp=0x0121f13c,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x4ed6c]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x6377b]  RtlInitializeExceptionChain+0xef
+C  [ntdll.dll+0x6374e]  RtlInitializeExceptionChain+0xc2
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x011aa400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1992, stack(0x011d0000,0x01220000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00010000 - 0x0003f000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x779a0000 - 0x77adc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76600000 - 0x766d4000 	C:\Windows\system32\kernel32.dll
+0x75bb0000 - 0x75bfa000 	C:\Windows\system32\KERNELBASE.dll
+0x761a0000 - 0x76240000 	C:\Windows\system32\ADVAPI32.dll
+0x76240000 - 0x762ec000 	C:\Windows\system32\msvcrt.dll
+0x763a0000 - 0x763b9000 	C:\Windows\SYSTEM32\sechost.dll
+0x75f50000 - 0x75ff1000 	C:\Windows\system32\RPCRT4.dll
+0x75e30000 - 0x75ef9000 	C:\Windows\system32\USER32.dll
+0x75f00000 - 0x75f4e000 	C:\Windows\system32\GDI32.dll
+0x77af0000 - 0x77afa000 	C:\Windows\system32\LPK.dll
+0x76530000 - 0x765cd000 	C:\Windows\system32\USP10.dll
+0x747b0000 - 0x7494e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x763c0000 - 0x76417000 	C:\Windows\system32\SHLWAPI.dll
+0x76380000 - 0x7639f000 	C:\Windows\system32\IMM32.DLL
+0x77b00000 - 0x77bcc000 	C:\Windows\system32\MSCTF.dll
+0x6a780000 - 0x6a83e000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x676c0000 - 0x679e1000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x6f2c0000 - 0x6f2c7000 	C:\Windows\system32\WSOCK32.dll
+0x76970000 - 0x769a5000 	C:\Windows\system32\WS2_32.dll
+0x76420000 - 0x76426000 	C:\Windows\system32\NSI.dll
+0x738d0000 - 0x73902000 	C:\Windows\system32\WINMM.dll
+0x76430000 - 0x76435000 	C:\Windows\system32\PSAPI.DLL
+0x73e30000 - 0x73e3c000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x735e0000 - 0x73600000 	C:\Program Files\Java\jre7\bin\java.dll
+0x73600000 - 0x73613000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath/p:C:\Program Files\Android\android-sdk\platforms\android-15\android.jar;C:\Program Files\Android\android-sdk\add-ons\addon-google_apis-google-15\libs\effects.jar;C:\Program Files\Android\android-sdk\add-ons\addon-google_apis-google-15\libs\usb.jar;C:\Program Files\Android\android-sdk\add-ons\addon-google_apis-google-15\libs\maps.jar 
+java_command: com.facebook.android.AccessYelp
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_03
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\apache-maven-3.0.4\bin;D:\eclipse-jee-indigo-SR2-win32\eclipse;
+USERNAME=Smarth
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 6, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 6, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 3142636k(1248156k free), swap 6283516k(3319396k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Wed May 02 18:53:49 2012
+elapsed time: 0 seconds
+

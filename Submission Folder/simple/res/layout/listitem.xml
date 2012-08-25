@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<views.ListItem 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+	<ImageView
+	    android:id="@+id/itemicon"
+	    android:layout_width="70dp"
+	    android:layout_height="70dp"
+	    android:src="@drawable/itemicon" />
+	
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="vertical" >
+   <TextView
+        android:id="@+id/locationname"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/locationname" />
+   
+	 <TextView
+	     android:id="@+id/locationaddress"
+	     android:layout_width="110dp"
+	     android:layout_height="wrap_content"
+	     android:text="@string/locationaddress" />
+
+	 <LinearLayout
+	     xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="right" >
+
+	     <ImageView
+	         android:id="@+id/ratingicon"
+	         android:layout_width="100dp"
+	         android:layout_height="30dp"
+	         android:src="@drawable/ratingicon" 
+	         android:gravity="left"/>
+
+	 </LinearLayout>
+  </LinearLayout>
+
+</views.ListItem >
